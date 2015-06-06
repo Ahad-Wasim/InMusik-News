@@ -1,5 +1,222 @@
+html,body{
+	max-width:100%;
+	overflow-x:hidden; /* Can't scroll past the browsers width */
+	background-color: #FEFEFE !important;
+	box-sizing:border-box;
+}
+
 .inMusik-logo-background{
 	display:inline-block;
 	background: #1C2027;
 }
+
+/*****************/
+
+
+
+
+/* Top Nav-Bar */
+
+.navbar {
+  margin-bottom: 0px !important;
+}		
+											/* THE NAV CAN BE DELETED LATER ON*/
+.navbar-brand > img {
+  height: 30px;
+}
+
+/* Top Nav bar */
+
+
+
+
+
+
+#Main-Content{
+	width:100%;
+	height:3000px;
+}
+
+#Main-Content > div{
+	display:inline-block;
+}
+
+
+/* InMusik Navigation Bar */
+.Default-Navigation-Bar{
+	box-sizing:border-box;
+	float:left;
+	border:1px solid black;
+	max-width:271px;
+	height:100%;
+	background:#EEE;
+}
+
+.Default-Navigation-Bar h3{
+	width:100%;
+	border-bottom: 1px solid #dcdedf;
+}
+/* Navigation Bar */
+
+
+
+
+/* News Content */
+
+.News-Content{
+	background:white;
+	width:1100px; /* play around with this later on. Maybe add just a News Content with a width of 100% and padding of 271px for the navigation bar */
+}
+
+.News-Introduction{
+	width:95%;
+	margin:0 auto;
+	border-bottom: 1px solid #DCDEDF;
+	margin-top: 25px;
+}
+
+.News-Introduction-Title{
+	margin-bottom: 8px;
+	display:block;
+	position:relative;
+}
+
+.News-Introduction-Title img {
+	height:50px;
+	width:auto;
+}
+
+.News-Introduction-Title p{
+	display:inline-block;
+	margin-bottom:-10px;
+	position: absolute;
+	right:0;
+	bottom:0;
+	font-size: 30px;
+}
+
+
+/* Title */
+
+.Article-Title{
+	margin-top: 50px;
+	border-bottom: 1px solid black;
+	width:75%;
+	margin-left: 25px;
+}
+
+.Article-Title h1{
+	font-family: 'Josefin Sans', sans-serif;
+	color:#262626;
+	font-size: 5em;
+}
+
+/* Title */
+
+.Below-Title{
+	margin-top: 30px;
+}
+
+.authors-profile{
+	display: inline-block;
+	margin-left: 25px;	
+}
+
+.authors-profile p{
+	display:inline-block;
+}
+
+.Profile-Pic{
+	height:100px;
+	width:100px;	/* Parent is .authors-profile */
+	border-radius:25px;
+	float:left;
+}
+
+.Profile-info{
+	display:inline-block;
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight: bold;
+	margin-left: 15px;
+	margin-top: 18px;
+}
+
+
+.Profile-info p {
+	line-height: 90%;
+	display:block;
+}
+
+/*Social Media */
+
+.Social-Media{
+	display:inline-block;
+	float:right;
+}
+
+.facebook-circle{
+	color:#3B5998;
+}
+
+.twitter-circle{
+	color:#00ABEC;
+}
+
+.flickr-circle{
+	color:#FF0187;
+}
+
+.envelope-circle{
+	color:rgb(92, 198, 66);
+}
+
+.facebook:hover{
+	
+}
+.twitter:hover{
+	
+}
+
+.flickr:hover{
+	
+}
+
+.envelope:hover{
+	
+}
+
+
+/* Social Media */  
+
+
+
+
+
+
+.News-Text{
+	display:inline-block;
+	font-size: 15px;
+	line-height: 150%;
+	font-family: 'Poppins', sans-serif;
+	width:60%;
+	margin-top:40px;
+	margin-left: 25px;
+}
+
+
+/* Width */
+
+.Video-Player{
+	width:560px;
+	margin:0 auto;
+}
+
+
+
+
+
+
+
+/* News Content */
+
 
