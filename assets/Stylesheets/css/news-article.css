@@ -5,10 +5,7 @@ html,body{
 	box-sizing:border-box;
 }
 
-.inMusik-logo-background{
-	display:inline-block;
-	background: #1C2027;
-}
+
 
 /*****************/
 
@@ -33,8 +30,10 @@ html,body{
 
 
 #Main-Content{
+	margin-top:57px; /* For Bootstraps NavBar Delete Later */
 	width:100%;
 	height:3000px;
+	position:relative;
 }
 
 #Main-Content > div{
@@ -57,6 +56,55 @@ html,body{
 	border-bottom: 1px solid #dcdedf;
 }
 /* Navigation Bar */
+
+
+/* Music Player */
+.Music-Player{
+	position:fixed;
+	height:70px;
+	width:75px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	background:#222;
+	right:0;
+	top:175px;
+	border-left:3px solid #403f41;
+	border-bottom:3px solid #403f41;
+	border-top:3px solid #403f41;
+	z-index: 1;
+}
+
+.Play-Button-Wrapper{
+	box-sizing:border-box;
+	display:block;
+	width:32.2px;
+	height:38px;
+	position: absolute;
+	left:50%;
+	top:50%;
+	margin-top: -19px;
+	margin-left:-16.1px; 
+	
+}
+
+.Default-Play-Button{
+	color:#00B4FF;
+	font-size: 2.3em;
+	cursor:pointer;
+	-webkit-transition-property:background;
+	-webkit-transition-property:.3s;
+	-webkit-transition-function:ease-in-out;
+	transition-property:color;
+	transition-duration:.3s;
+	transition-timing-function:ease-in-out;
+}
+
+.Default-Play-Button:hover{
+	color:#fff;
+}
+
+
+/* Music Player */
 
 
 
@@ -115,6 +163,7 @@ html,body{
 
 .Below-Title{
 	margin-top: 30px;
+	position:relative;
 }
 
 .authors-profile{
@@ -151,7 +200,11 @@ html,body{
 
 .Social-Media{
 	display:inline-block;
-	float:right;
+	position:absolute;
+	height:56px;
+	margin-top: -28px;
+	top:50%;
+	right:1%;
 }
 
 .facebook-circle{
@@ -186,30 +239,254 @@ html,body{
 }
 
 
-/* Social Media */  
+/* Social Media */
 
 
 
 
 
+
+
+/* Article Image */
+
+.Main-Image-Wrapper{
+	position:relative;
+}
+
+.Main-Image{
+	display:inline-block;
+	margin-top: 35px;
+	margin-left: 25px;
+}
+
+figcaption{
+	text-align: center;
+}
+
+/* Advertisements */
+
+
+.Advertisement-One{
+	display:inline-block;
+	float:right;
+	width:260px;
+	height:200px;
+	border:1px solid black;
+	position:absolute;
+	top:35px;
+	right:10px;
+	background:url(http://allthingsd.com/files/2013/03/Screen-Shot-2013-03-26-at-8.07.52-AM.png);
+	background-size:contain;
+	background-position: center;
+}
+
+
+/* Advertisements */
+
+
+
+
+
+
+
+
+/* Article Image */
+
+
+
+
+/* News-Paragraph */
 
 .News-Text{
+	position:relative;
+}
+
+.News-Paragraphs{
+	box-sizing:border-box;
 	display:inline-block;
 	font-size: 15px;
 	line-height: 150%;
 	font-family: 'Poppins', sans-serif;
-	width:60%;
+	width:66%;
 	margin-top:40px;
 	margin-left: 25px;
+	background:#EEE;
+	padding:20px 15px 20px 25px;
+	border-radius:5px;
 }
 
 
-/* Width */
+
+
+/* Side Advertisements */
+
+.Wall-Of-Sounds{
+	display:inline-block;
+	width:300px;
+	height:300px;
+  	top: 42px;
+  	position:relative;
+  	float:right;
+  	font-family: Verdana,'sans-serif';
+  	text-align: center;
+  	background:url('http://thepaperwall.com/wallpapers/music/big/big_f896cefafccd56ef51443c6ec7ab4eeb937db1c0.jpg');
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size:cover;
+}
+
+.Wall-Of-Sounds-Caption{
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:100%;
+	width:100%;
+	cursor:pointer;
+	-webkit-transition-property:background;
+	-webkit-transition-duration:.3s;
+	-webkit-transition-function:ease-in-out;
+	transition-property:background;
+	transition-duration:.3s;
+	transition-timing-function:ease-in-out;
+}
+
+.Wall-Of-Sounds-Caption:hover{
+	background:#FFF;
+	opacity:.3;
+}
+
+.Wall-Of-Sounds-Caption h1{
+	color:white;
+}
+
+
+.Side-Articles{
+	display:inline-block;
+	float:right;
+	width:300px;
+	position:absolute;
+	top:425px;
+	right:0px;
+}
+
+.Trending-Articles-Header{
+	background:#222;
+	height:40px;
+	box-shadow: 0px 2px 2px 0px #000000;
+	position:relative;
+}
+
+.Trending-Articles-Header p{
+	margin-bottom:0 !important;
+	font-size:18px;
+	height:25px;
+	color:white;
+	position:absolute;
+	width:136px;
+	left:50%;
+	margin-left: -68px;
+	top:50%;
+	margin-top:-12.5px;
+}
+
+.Trending-Article{
+	height:100px;
+	width:100%;
+	background:#EEE;
+	margin-top: 2px;
+	position:relative;
+}
+
+.Trending-Article p {
+	display:inline-block;
+	max-width: 180px;
+	height:200px;
+	max-height: 55px;
+	font-size: 18px;
+	position:absolute;
+	left:105px;
+	top:50%;
+	margin-top: -27.5px;
+}
+
+.Article-Picture{
+	height:70px;
+	width:75px;
+	border:1px solid black;
+	position:absolute;
+	top:50%;
+	margin-top: -35px;
+	left:10px;
+}
+
+
+/* Side Advertisements */
+
+
+
+
+
+/* News-Paragraph */
+
+
+
+
+
+
+.Video-Player-Wrapper{
+	margin-top: 70px;
+	margin-left: 25px;
+	width:720px;
+	padding: 30px 0 30px 0;
+	background:#EEE;
+}
+
 
 .Video-Player{
 	width:560px;
 	margin:0 auto;
 }
+
+
+
+.Promoted-Stories-Wrapper{
+	background: #222;
+	height:50px;
+	color:white;
+	width:90%;
+	margin:0 auto;
+	margin-top:25px;
+	position:relative;
+	border-radius:10px;
+}
+
+.PS-Text{	
+	position:absolute;
+	text-align: center;
+	width:196px;
+	left:50%;
+	margin-left: -98px;
+	height:35px;
+	top:50%;
+	margin-top: -17.5px;
+
+}
+
+.PS-Text p{
+	font-size: 25px;
+	margin-bottom: 0px;
+}
+
+.Not-A-Member{
+	height:125px;
+	width:350px;
+	border:1px solid black;
+}
+
+.container{
+	background:lavender;
+}
+
 
 
 
