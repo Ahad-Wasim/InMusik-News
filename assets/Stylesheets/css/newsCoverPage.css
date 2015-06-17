@@ -1,0 +1,26 @@
+.navbar {
+  margin-bottom: 0px !important;
+}		
+											/* THE NAV CAN BE DELETED LATER ON*/
+.navbar-brand > img {
+  height: 30px;
+}
+
+
+#Main-Body{
+	margin-top: 57px;
+}
+
+#News-Header-Section{
+	background:#EEE;
+}
+
+.News-Wrapper{
+	border-bottom:4px solid black;
+	padding-left: 0px;
+}
+
+.Social-Media{
+	border:1px solid black;
+	height:20px;
+}
